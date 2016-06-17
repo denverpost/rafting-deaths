@@ -19,7 +19,7 @@
 	<meta name="dcterms.dateCopyrighted" content="2015" />
 	<meta name="copyright" content="The Denver Post" />
 
-	<meta name="title" content="Death on the River: Family sees weaknesses in regulation of commercial rafting after son's death - The Denver Post" />
+	<meta name="title" content="/game-of-pain/" />
 	<meta name="description" content="The loss of their eleven-year-old son in the Arkansas River a year ago devastated Drake Durkee's family, setting them on a path to improve river safety." />
 	<meta name="keywords" content="colorado, rocky mountains, commercial rafting, rivers, deaths, drowning, regulation, safety, family, arkansas river" />
 	<meta name="news_keywords" content="colorado, rocky mountains, commercial rafting, rivers, deaths, drowning, regulation, safety, family, arkansas river" />
@@ -57,8 +57,8 @@
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
-    <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
-	<script src="http://cdn.leafletjs.com/leaflet-1.0.0-b1/leaflet.js"></script>
+    <script>var _sf_startpt=(new Date()).getTime()</script>
+	<script src="//cdn.leafletjs.com/leaflet-1.0.0-b1/leaflet.js"></script>
     <script src="//www.googletagservices.com/tag/js/gpt.js"></script>
 </head>
 <body>
@@ -90,15 +90,15 @@
         'Update Hour of Day':'',
         'Behind Paywall':'NO',
         'Mobile Presentation':is_mobile(),
-        'kv':'sports',
+        'kv':'news',
         'Release Version':'',
         'Digital Publisher':'',
         'Platform':'custom',
         'Section':'Special Projects',
-        'Taxonomy1':'Sports',
+        'Taxonomy1':'Investigations',
         'Taxonomy2':'Special Projects',
-        'Taxonomy3':'Game of Pain',
-        'Taxonomy4':'Pushing for research on CBD\'s benefits to NFL players',
+        'Taxonomy3':'Death on the River',
+        'Taxonomy4':'Family sees weaknesses in regulation of commercial rafting after son\'s death',
         'Taxonomy5':'',
         'Content Source':'',
         'Canonical URL': '',
@@ -129,20 +129,28 @@
 <div class="fixed">
 	<nav class="top-bar fixed" data-topbar data-options="is_hover:true;scrolltop:false;custom_back_text:true;back_text:Back;">
 		<ul class="title-area">
-			<li class="name"><div id="name1"><img src="./img/dpblack.svg" id="logoimg" border="0" alt="The Denver Post" /></div><a href="http://www.denverpost.com"><div id="name2"><img src="./img/dpbug.svg" id="logosmall" border="0" alt="DP Logo"><h2>Game of Pain</h2></div></a></li>
+			<li class="name"><div id="name1"><img src="./img/dpblack.svg" id="logoimg" border="0" alt="The Denver Post" /></div><a href="http://www.denverpost.com"><div id="name2"><img src="./img/dpbug.svg" id="logosmall" border="0" alt="DP Logo"><h2>Death on the River</h2></div></a></li>
 			<li class="toggle-topbar menu-icon"><a href="javascript:void(0);"><span></span></a></li>
 		</ul>
 		<section class="top-bar-section">
 			<ul class="right">
 				<li class="divider"></li>
+				<li class="top-top"><a href="scrollDownTo('#rafting-death-map',90);">Map</a>
+				<li class="divider"></li>
 				<!-- links to chapters of single story -->
-				<li class="top-top has-dropdown"><a href="javascript:void(0);">Sections</a>
+				<li class="top-top has-dropdown"><a href="scrollDownTo('#rafting-death-map',90);">Profiles</a>
 					<ul class="dropdown">
-		                <li class="top-top"><a href="javascript:scrollDownTo('#main',90);">&raquo; Part 1: CBD hope?</a></li>
-		                <li class="top-top"><a href="part2.html">Part 2: Untangling knots</a></li>
-						<!-- <li class="top-top"><a href="inning2.html">Second Inning: Obie Sanni and the Jennings family</a></li>
-						<li class="top-top"><a href="inning4.html">Fourth Inning: Lou Rotola</a></li>
-						<li class="top-top"><a href="inning5.html">Fifth Inning: LaTroy Hawkins</a></li> -->
+		                <li class="top-top"><a href="javascript:scrollDownTo('#barkley-profile',90);">Kenneth Barkley</a></li>
+		                <li class="top-top"><a href="javascript:scrollDownTo('#cheong-profile',90);">Chun Yip “Daniel” Cheong</a></li>
+		                <li class="top-top"><a href="javascript:scrollDownTo('#palmer-profile',90);">Ronald Palmer</a></li>
+		                <li class="top-top"><a href="javascript:scrollDownTo('#hernandez-profile',90);">Eduardo Hernandez</a></li>
+		                <li class="top-top"><a href="javascript:scrollDownTo('#sevilla-profile',90);">Chris Sevilla</a></li>
+		                <li class="top-top"><a href="javascript:scrollDownTo('#hodges-profile',90);">Van Hodges</a></li>
+		                <li class="top-top"><a href="javascript:scrollDownTo('#johnson-profile',90);">Mary Johnson</a></li>
+		                <li class="top-top"><a href="javascript:scrollDownTo('#luna-profile',90);">Erik Luna</a></li>
+		                <li class="top-top"><a href="javascript:scrollDownTo('#soto-profile',90);">Jose Soto</a></li>
+		                <li class="top-top"><a href="javascript:scrollDownTo('#math-profile',90);">Michelle Math</a></li>
+		                <li class="top-top"><a href="javascript:scrollDownTo('#sizemore-profile',90);">Paul Sizemore</a></li>
 	                </ul>
 				</li>
                 
@@ -185,7 +193,7 @@
 
 <!-- +++++++++++++++++++++++++ Splash Photo Credit +++++++++++++++++++++++++ --> 	
 	<div class="large-11 large-centered medium-11 medium-centered small-12 columns">
-		<p class="credit">AAron Ontiveroz, The Denver Post</p>
+		<p class="credit">Michael Reaves, The Denver Post</p>
 	</div>
     <!-- end credit -->
 
@@ -225,6 +233,18 @@
 			<p>Melissa slept briefly with her sweatshirt over her head, curled up on the ground. Her husband and father walked some 20 miles, downstream and back, with their flashlights. Dan Durkee, fire chief for the Platteville-Gilcrest Fire Protection District, would walk for the next two days, nearly 30 miles each day, searching for his youngest child while Melissa organized search parties and comforted their three older children in a Buena Vista motel room.</p>
 			<p>Dan was there, surrounded by his firefighters, when rescuers pulled his son&rsquo;s body out of the Arkansas. Drake&rsquo;s foot was snagged at the bottom of the river, his body trapped by an undercut rock chiseled away by the power of the water.</p>
 			<p>The spot was in the same place where Melissa had dropped to the ground along the riverbank that first night and refused to move.</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="large-9 large-centered medium-11 medium-centered small-12 columns">
+			<div class="centerphoto">
+				<img src="./img/rafting-KSO_1892.jpg" alt="Putzier doing light and music therapy" />
+				<p class="caption"><span class="photog">Kathryn Scott Osler, The Denver Post</span>Drake&rsquo;s dad Daniel, left, and mom, Melissa, wipe away tears as they listen as the school choir sings &ldquo;Black Bird&rdquo; in Drake&rsquo;s honor during the ceremony. A special bench made in memory of Drake is dedicated at his school, Maple Grove Elementary in Golden, on Friday, May 20, 2016. </p>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="large-7 large-centered medium-9 medium-centered small-12 columns">
 
 			<h3 class="subheading">Seeking a beginner trip</h3>
 
@@ -236,6 +256,18 @@
 			<p>The boys played with a puzzle while their grandpa signed waivers and reminded the guides he and Drake were not swimmers. Their grandmother planned to wait in the car during the scheduled three-hour trip, using her iPad.</p>
 			<p>The boys were excited. Feeldy was nervous.</p>
 			<p>During the safety talk along the shore, a guide used Drake as a model, grabbing him by the straps of his life jacket and leaning backward to demonstrate how to pull someone back into the boat should they fall into the river.</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="large-9 large-centered medium-11 medium-centered small-12 columns">
+			<div class="centerphoto">
+				<img src="./img/rafting-KSO_19218.jpg" alt="Rafting safety sign" />
+				<p class="caption"><span class="photog">Kathryn Scott Osler, The Denver Post</span>Principal Ian Stone, right, talks to the students about the special bench after it is unveiled during the ceremony.</p>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="large-7 large-centered medium-9 medium-centered small-12 columns">
 
 			<h3 class="subheading">Where is Drake?</h3>
 
@@ -266,6 +298,18 @@
 			<p>Dawson and his grandfather refused to get back in the raft to finish the trip.</p>
 			<p>Instead, they followed railroad tracks 3 miles to Hecla Junction, the scheduled take-out point.</p>
 			<p>At dark that first day, the search was suspended until the next morning.</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="large-9 large-centered medium-11 medium-centered small-12 columns">
+			<div class="centerphoto">
+				<img src="./img/rafting-1MR8824.jpg" alt="KODI Rafting assistant head boatman Dan Triantafillou" />
+				<p class="caption"><span class="photog">Michael Reaves, The Denver Post</span>KODI Rafting assistant head boatman Dan Triantafillou talks to a group about safety before heading out on the Arkansas River on June 10, 2016.</p>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="large-7 large-centered medium-9 medium-centered small-12 columns">
 
 			<h3 class="subheading">The worst moment</h3>
 
@@ -281,6 +325,18 @@
 			<p>While Dan and Melissa were driving to Buena Vista, the rafting company owner and his wife drove Dawson and his grandfather back to the company&rsquo;s rustic wooden building, where smiling pictures of rafters in whitewater flash on a television screen in the lobby, and where the boys&rsquo; grandmother was waiting in her car. When Kathy Feeldy saw them get of the car without Drake, she knew something terrible had happened.</p>
 			<p>She cried and she screamed. &ldquo;How could you let this happen?&rdquo; she shouted at Hammer, the owner. &ldquo;You promised us they would be safe!&rdquo;</p>
 			<p>Dawson sat on a bench outside the rafting company and cried.</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="large-9 large-centered medium-11 medium-centered small-12 columns">
+			<div class="centerphoto">
+				<img src="./img/rafting-1MR9006.jpg" alt="Rafting safety sign" />
+				<p class="caption"><span class="photog">Michael Reaves, The Denver Post</span>A sign outlining both safety guidelines and Colorado state law requirements sits at Stonebridge boat ramp on June 10, 2016. Similar maps are located at each in and out of the Arkansas River informing boaters of safety when a park ranger is not present.</p>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="large-7 large-centered medium-9 medium-centered small-12 columns">
 
 			<h3 class="subheading">A shift in the search</h3>
 
@@ -301,6 +357,18 @@
 			<p>But, he says, &ldquo;I don&rsquo;t know what could have changed this. People fall out of rafts occasionally in this industry. There is no way to change what happened. They are hurting so badly; it doesn&rsquo;t make sense to them.&rdquo;</p>
 			<p>Drake was sucked under an undercut rock and trapped within seconds of falling out of the boat. Customers are warned during the pre-float safety talk not to stand up in the river, he said.</p>
 			<p>It&rsquo;s why people who book rafting trips must sign a waiver acknowledging the &ldquo;inherent risk&rdquo; of going out on the river.</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="large-9 large-centered medium-11 medium-centered small-12 columns">
+			<div class="centerphoto">
+				<img src="./img/rafting-KSO_19334.jpg" alt="Sixth-grade classmates comfort each other" />
+				<p class="caption"><span class="photog">Kathryn Scott Osler, The Denver Post</span>Kaylyn Townsend, 12, right, and Ainsley Overholt, 11, comfort each other on the new bench, joining several of their sixth-grade classmates who are standing close by</p>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="large-7 large-centered medium-9 medium-centered small-12 columns">
 
 			<h3 class="subheading">Broken</h3>
 
@@ -315,198 +383,403 @@
 			<p>&ldquo;There is something really daunting that deep in your soul you know you will never again know true happiness,&rdquo; Melissa said.</p>
 			<p>At home, Melissa and Dan spend more time alone, while Dawson says he spends more time with his older sisters, who are 23 and 19, than they spend as a family.</p>
 			<p>Before the anniversary of Drake&rsquo;s death this week, Melissa passed out notecards with his picture and a message asking people to &ldquo;do an act of kindness for someone&rdquo; on June 10. The family also has created the <a href="http://www.thedrakedurkeefoundation.org/foundation/">Drake Durkee Foundation</a> to give scholarships and awards in his name. &ldquo;My worst fear is people forgetting him,&rdquo; she said. &ldquo;I&rsquo;m not afraid of anything else.&rdquo;</p>
+		</div>
+	</div>
 
-			<h3 class="subheading">Commercial rafting deaths in 2014 and 2015</h3>
+	<div class="row">
+		<div class="large-6 large-push-3 medium-8 medium-push-2 small-12 columns">
+			<p class="bylinebottom"><i>Jennifer Brown: <a href="mailto:jbrown@denverpost.com?subject=Rafting deaths">jbrown@denverpost.com</a> or <a href="https://twitter.com/jbrowndpost">@JBrownDPost</a></i></p>
+		</div>
+	</div>
+	<!-- end credits -->
+</section>   
+	<!-- end article -->
+
+<div class="row">
+	<div class="large-10 large-centered medium-12 medium-centered small-12 columns">
+		<div class="row adcubes">
+			<div class="large-6 medium-6 small-12 columns">
+				<div id="div_Cube5" class="adcube-wrap">
+					<script type='text/javascript'>
+					googletag.defineSlot('/8013/denverpost.com/Lifestyle/Health/Mental-health', [300,250], 'div_Cube5').addService(googletag.pubads());
+					googletag.pubads().enableSyncRendering();
+					googletag.enableServices();
+					googletag.display('div_Cube5');
+					</script>
+				</div>
+			</div>
+			<div class="large-6 medium-6 hide-for-small columns">
+				<div id="div_Cube6" class="adcube-wrap">
+					<script type='text/javascript'>
+					if ( window.innerWidth >= 660 ) {
+						googletag.defineSlot('/8013/denverpost.com/Lifestyle/Health/Mental-health', [300,250], 'div_Cube6').addService(googletag.pubads());
+						googletag.pubads().enableSyncRendering();
+						googletag.enableServices();
+						googletag.display('div_Cube6');
+					}
+					</script>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<section id="side">
+	<!-- ENDER PHOTO -->
+	<div class="row">
+		<div class="large-12 large-centered medium-12 medium-centered small-12 columns">
+			<div class="centerphoto">
+				<img src="./img/rafting-1MR8803.jpg" alt="Maddox goes over a safety checklist" />
+				<p class="caption"><span class="photog">Michael Reaves, The Denver Post</span>Arkansas River Park Ranger Andrew Maddox goes over a safety checklist with KODI Rafting head boatman Krista Martinson before a group heads out on the Arkansas River on June 10, 2016. </p>
+			</div>
+		</div>
+	</div>
+	<!-- end photo -->
+
+	<div class="row">
+		<div class="large-9 large-centered medium-11 medium-centered small-12 columns">
+			<div class="title">
+				<h3><span class="titlepart">Death on the River: Rising flow</span></h3>
+				<h2>Third year of high water spotlights dangers of commercial rafting</h2>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="large-6 large-centered medium-8 medium-centered small-12 columns">
+			<p>More people were killed during guided rafting trips the past two seasons &mdash; when Colorado rivers pulsed with high water &mdash; than in the previous five years combined.</p>
+			<p>Twelve people, seven last year and five in 2014, were victims of deadly commercial rafting trips along the Arkansas River, Clear Creek, the Cache la Poudre, the Roaring Fork and the Animas, a statistic rafting experts blame on rushing, higher-than-average water flow.</p>
+			<p>At the start of the third high-water season in a row, river rangers with Colorado Parks and Wildlife warned thrill seekers to check themselves before signing up for major whitewater. <a href="http://www.denverpost.com/2016/05/22/woman-dies-after-falling-from-commercial-raft-on-arkansas-river/">Two people have died</a> on commercial trips this summer on the Arkansas and the <a href="http://www.aspentimes.com/news/22494128-113/breaking-news-man-dies-on-roaring-fork-river">Roaring Fork</a>, and another was <a href="http://www.denverpost.com/2016/06/12/raft-overturns-in-clear-creek-woman-in-critical-condition/">in critical condition</a> last weekend after falling out of a guided raft on Clear Creek.</p>
+			<p>&ldquo;It&rsquo;s not Disneyland. This is the real deal,&rdquo; said Stew Pappenfort, senior ranger at the Salida-based Arkansas Headwaters Recreation Area, which has just five river rangers to watch over 152 miles of water coursing from Leadville through Brown&rsquo;s Canyon and the Royal Gorge. &ldquo;Everything is fine when you are in the boat. Once you are out, it&rsquo;s a whole new game.&rdquo;</p>
+			<p>Many of the 12 deadly accidents in the past two years, which are detailed in state parks reports and law enforcement documents reviewed by The Denver Post, involved people who were in their 40s and 50s and out of shape. Two had heart problems, according to reports.</p>
+			<p>Pappenfort, who has 40 seasons of guide and ranger experience, trains new river guides on how to book customers on trips that suit their abilities, taking into account their rafting experience, whether they know how to swim, their age, weight and general physical health.</p>
+			<p>&ldquo;A lot of the serious accidents are screening errors, whether it&rsquo;s an error of the passenger or an outfitter,&rdquo; he said. &ldquo;Would you go to a ski area for the first time, slap on skis, take the lift to the top of a black run, go down and say, &lsquo;I wonder what is going to happen now?&rsquo; &rdquo;</p>
+			<p>It&rsquo;s up to rafting outfitters in this state to set age limits for expert trips or to decide whether to take a customer who has never rafted before and doesn&rsquo;t know how to swim. There is no state law that prohibits a rafting company from taking guests down the river when a high-water advisory is in effect &mdash; only a law officer can shut down a section of a river if, for example, a truck crashes off the bridge and into the river, as happened a couple of years ago along the Poudre River.</p>
+			<p>This week, three sections of the Arkansas with serious rapids, including the popular Numbers stretch, were under a high-water advisory. The designation &ldquo;recommends&rdquo; that commercial outfitters alter their runs, putting in or taking out at different points than scheduled. Commercial outfitters heed the warnings &ldquo;pretty well,&rdquo; but private kayakers and rafters who &ldquo;live for these levels&rdquo; often go anyway, Pappenfort said.</p>
+
+			<h3 class="subheading">Physical demand</h3>
+
+			<p>Commercial rafting companies took more than 500,000 people down Colorado rivers in 2014 and again in 2015, so, statistically speaking, the odds of dying on a commercial rafting trip are a fraction of a percentage. But the risks increase when looking at only expert-level trips, where the rapids are rated at least Class IV &mdash; defined as &ldquo;intense, powerful but predictable rapids requiring precise boat handling in turbulent water&rdquo; on the international rating scale.</p>
+			<p>All but three of the 12 people who died on guided trips in 2014 and 2015 were on Class IV and V rapids, which make up an estimated one-quarter to one-third of the commercial trips in this state, according to outfitters and Arkansas Headwaters Recreation Area statistics. The other three deaths, including an 11-year-old boy from Golden, were on intermediate rapids rated Class III, although the rapid where the boy fell into the Arkansas River, called Big Drop, borders on Class IV depending on water flow.</p>
+			<p>&ldquo;It&rsquo;s a great activity, but you have to go into it with a definite respect for the river,&rdquo; said Kris Wahlers, boating safety program manager for Colorado Parks and Wildlife. &ldquo;If a passenger falls in the river, they need the presence of mind and ability to try to save themselves. If you think that physical demand may be out of your ability, I&rsquo;m not saying don&rsquo;t go rafting, but maybe think about another trip.&rdquo;</p>
+			<p>The phrase &ldquo;the victim made no attempt to self-rescue&rdquo; appears repeatedly in investigative reports of rafting deaths. Several of the reports also mention a victim was a &ldquo;big person&rdquo; or had trouble squeezing into the wetsuit before the trip. In a handful of cases, the victim was too heavy for other passengers to pull back into the boat. At least one outfitter has a policy that if a guest can&rsquo;t fit into a life jacket, they can&rsquo;t go.</p>
+			<p>Commercial rafting trips outnumber private ones, where regulations about guide experience and CPR qualifications do not apply. Along a stretch of the Arkansas from Leadville to Cañon City, guided boats are about 10-to-1, rangers said.</p>
+			<p>Statewide, five people were killed last summer on private river runs &mdash; either by raft, kayak or paddleboard &mdash; and nine were killed on private trips in 2014. In 2012 and 2013, both low-water years when the season was shorter, just one person was killed on a private trip, according to state parks statistics.</p>
+			<p>In the past two years, river rangers statewide have written about 40 tickets to rafting outfitters for infractions including failing to maintain guide records or not having a first-aid kit. Tickets are $50.</p>
+			<p>Andrew Maddox, river ranger supervisor at Arkansas Headwaters, and his four rangers typically start their days checking commercial rafts for the required safety equipment at popular put-ins near Buena Vista and Cañon City. Then they head downstream by raft or kayak and &ldquo;post up&rdquo; near Sunshine Rapid along the Royal Gorge trip or at Raft Ripper or Siedel&rsquo;s Suckhole along the Brown&rsquo;s Canyon trip. They wait along the shore or in eddies, ready to scoop up people and paddles that fall overboard.</p>
+			<p>In a season, they pluck about 100 people from the river or pull them to shore by rope, Maddox said.</p>			
+		</div>
+	</div>
+	<div class="row">
+		<div class="large-12 large-centered medium-12 medium-centered small-12 columns">
+			<div class="centerphoto">
+				<div class="photorow twinphoto">
+					<div class="photoleft">
+						<img src="./img/rafting-1MR8969.jpg" alt="Arkansas River Park Ranger Andrew Maddox" />
+						<p class="caption"><span class="photog">Michael Reaves, The Denver Post</span>
+						Arkansas River Park Ranger Andrew Maddox drives to Hecla Junction Recreation Area on June 10, 2016.</p>
+					</div>
+					<div class="photoright">
+						<img src="./img/rafting-1MR8850.jpg" alt="Rafters putting in" />
+						<p class="caption"><span class="photog">Michael Reaves, The Denver Post</span>
+						A rafting group puts their raft into the water as they prepare to head out into the Arkansas River on June 10, 2016.</p>
+					</div>
+					<div class="clear"></div>
+			    </div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="large-7 large-centered medium-9 medium-centered small-12 columns">
+
+			<h3 class="subheading">Subhed</h3>
+
+			<p>Colorado has about 200 river outfitters &mdash; including whitewater adventure tours and more peaceful float-fishing trips &mdash; licensed by the state, which sets the minimum experience required for guides and trip leaders. Rangers have authority to inspect river logs for every guide, which must include a minimum of 50 hours on the water.</p>
+			<p>Newly hired guides must have navigated the same stretch of the river at least once before they are allowed to take paying customers.</p>
+			<p>State regulations also stipulate that every passenger must wear a life vest and that the raft contain rope, a first-aid kit, a patch-repair kit, drinking water and human-waste containers. Outfitters must report an injury or death immediately to local authorities, although this often is not possible because reception is spotty in river canyons and remote stretches. In reality, amid the chaos of a flipped or high-sided raft, with customers floating in the river, the 911 call often is made by nearby rock climbers on a canyon wall, the next commercial float trip to come by that gets reception downstream or a motorist flagged down on a highway.</p>
+			<p>&ldquo;We have to be skilled enough to take care of them,&rdquo; said David Costlow with the Colorado River Outfitters Association. &ldquo;Not sit back and call 911.&rdquo;</p>
+			<p>River guides are typically the ones who cut open their client&rsquo;s wetsuit with a knife and start CPR on the riverbank. Response time by authorities is often 30 minutes or more, according to accident reports.</p>
+			<p>Costlow said Colorado&rsquo;s regulations are among the most stringent in the country and were written at outfitters&rsquo; request to distinguish them from fly-by-night guides who set up shop for the season. Guides turning away people who don&rsquo;t look fit but say they are ready to float will &ldquo;be accused of sexism, racism, any kind of &lsquo;ism&rsquo; you can think of,&rdquo; he said.</p>
+			<p>&ldquo;If you tame it down too much, they are not coming,&rdquo; he said. &ldquo;At what point do people say, &lsquo;The fun&rsquo;s over. I&rsquo;ll put on the virtual reality goggles?&rsquo; &rdquo;</p>
+			<p>But victims of rafting accidents said the regulations are too lax and that tourists might not realize how long it can take for medical help to arrive should something go wrong.</p>
+			<p>Jenny Martin traveled from Texas last summer with a group of mothers and their 13-year-old daughters for the girls&rsquo; soccer tournament in Colorado. They booked a rafting trip down Clear Creek and realized within minutes of getting on the river that the Class IV-rated trip was &ldquo;more than we expected,&rdquo; Martin said.</p>
+			<p>With the moms in one raft, and a group of 13-year-old girls in another, the moms and their guide were tossed into the water when their boat high-sided on an exposed rock. Michelle Math, Martin&rsquo;s best friend and the mother of her daughter&rsquo;s best friend, screamed as she floated downstream. The 13-year-old girls, including Math&rsquo;s daughter, were able to grab her life vest and hold onto her as they floated through whitewater, but they weren&rsquo;t strong enough to pull Math into their raft.</p>
+			<p>The girls let go when a kayaker told them he would ferry Math to shore, but by the time the Texas mother reached the riverbank, she was unconscious. A guide started CPR, but Martin, who is a nurse, said the guide was not doing it correctly so she took over to try to save her friend&rsquo;s life.</p>
+			<p>&ldquo;I told her, &lsquo;You are not doing it right!,&rsquo; &rdquo; Martin recalled, saying the guide was using a compression-to-breath ratio that had been outdated for years. &ldquo;That&rsquo;s a big deal. It&rsquo;s my biggest thing that I&rsquo;m still very, very angry about.&rdquo;</p>
+			<p>It took 10 to 15 minutes for a kayaker to cross the river, climb up a cliff and flag down a car so the driver could call 911, Martin said.</p>
+			<p>Martin never plans to raft again. But anyone who does, she said, should ask whether their guides are properly trained in CPR and whether they have phone communication and medical equipment to electronically shock someone&rsquo;s heart. She also suggested rafting customers make sure their boat is balanced &mdash; their raft had the &ldquo;three heaviest people on one side and the three smaller moms on the other,&rdquo; she said.</p>
+			<p>Martin had to tell her best friend&rsquo;s daughter that her mother was dead after attempts to save her beside Clear Creek failed.</p>
+			<p>Martin&rsquo;s daughter, who had held Math&rsquo;s life vest until handing her over to the kayaker, still has nightmares. &ldquo;She feels like she let her best friend down,&rdquo; Martin said.</p>
+			<p>Jennifer Lenze and Paul Sizemore were on a &ldquo;babymoon&rdquo; in Aspen two years ago when Sizemore drowned on a guided trip along the Roaring Fork. Lenze and two other women pulled Sizemore back into the raft after a short but violent swim through serious whitewater. Guides started CPR.</p>
+			<p>To get help, a fellow passenger had to climb up a steep embankment to a bike path and ask a cyclist to call 911. Lenze was screaming, asking why there was no helicopter or ambulance. &ldquo;It felt like an eternity,&rdquo; she said this week on the second anniversary of Sizemore&rsquo;s death. They had two sons together, now 2 and 4, and six kids between them.</p>
+			<p>The state&rsquo;s accident report says Sizemore did not listen to guide commands or swim to shore after he went overboard. &ldquo;The report is absurd,&rdquo; Lenze said. &ldquo;They are blaming him, like he wasn&rsquo;t swimming hard enough to save his life?&rdquo; Sizemore, who ran marathons and lifted weights every other day, was the &ldquo;most fit man&rdquo; Lenze knew, she said.</p>
+			<p>&ldquo;It&rsquo;s surreal still,&rdquo; Lenze said. &ldquo;Every day I think, &lsquo;if only we had not gone.&rsquo; It&rsquo;s hard to live that way.&rdquo;</p>
+
+			<!-- CREDITS -->
+	<div class="row">
+		<div class="large-6 large-push-3 medium-8 medium-push-2 small-12 columns">
+			<p class="bylinebottom"><i>Jennifer Brown: <a href="mailto:jbrown@denverpost.com?subject=Rafting deaths">jbrown@denverpost.com</a> or <a href="https://twitter.com/jbrowndpost">@JBrownDPost</a></i></p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="large-12 large-centered medium-12 medium-centered small-12 columns">
+			<div class="centerphoto">
+				<img src="./img/rafting-1MR8863.jpg" alt="Rafting group on Arkansas River" />
+				<p class="caption"><span class="photog">Michael Reaves, The Denver Post</span>A rafting group goes by another group preparing to leave Fisherman&rsquo;s Bridge on the Arkansas River.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="large-7 large-centered medium-9 medium-centered small-12 columns">
+			<h3 id="profiles" class="subheading">Commercial rafting deaths in 2014 and 2015</h3>
+
+			<p><em>These stories of 11 of the 12 commercial rafting deaths in Colorado in 2014 and 2015 are based primarily on Colorado Parks and Wildlife incident reports, which include sheriffs&rsquo; and coroners&rsquo; documents. Rapids classifications and water flows are for the incident dates. Mapped incident locations are approximate. Drake Durkee&rsquo;s story is told in the main article.</em></p>
+			<p><em>Two commercial rafting deaths have occurred in Colorado so far this year.</em></p>
 		</div>
 	</div>
 
 	<div class="row">
 		<div class="large-10 large-centered medium-11 medium-centered small-12 columns">
 			<div id="rafting-death-map"></div>
-		    <div id="johnson-profile"><a class="go-to-map" id="johnson">Johnson</a></div>
-		    <div id="barkley-profile"><a class="go-to-map" id="barkley">Barkley</a></div>
-		    <div id="durkee-profile"><a class="go-to-map" id="durkee">Durkee</a></div>
-		    <div id="hernandez-profile"><a class="go-to-map" id="hernandez">Hernandez</a></div>
-		    <div id="hodges-profile"><a class="go-to-map" id="hodges">Hodges</a></div>
-		    <div id="sevilla-profile"><a class="go-to-map" id="sevilla">Sevilla</a></div>
-		    <div id="sizemore-profile"><a class="go-to-map" id="sizemore">Sizemore</a></div>
-		    <div id="soto-profile"><a class="go-to-map" id="soto">Soto</a></div>
-		    <div id="palmer-profile"><a class="go-to-map" id="palmer">Palmer</a></div>
-		    <div id="luna-profile"><a class="go-to-map" id="luna">Luna</a></div>
-		    <div id="cheong-profile"><a class="go-to-map" id="cheong">Cheong</a></div>
-		    <div id="math-profile"><a class="go-to-map" id="math">Math</a></div>
 		</div>
 	</div>
 
 	<div class="row">
 		<div class="large-6 large-centered medium-8 medium-centered small-12 columns">
-			<p><em>These stories of 11 of the 12 commercial rafting deaths in Colorado in 2014 and 2015 are based primarily on Colorado Parks and Wildlife incident reports, which include sheriffs’ and coroners’ documents. Rapids classifications and water flows are for the incident dates. Mapped incident locations are approximate. Drake Durkee’s story is told in the main article.</em></p>
-			<p>&nbsp;</p>
-			<p>Lower Beaver Falls, Clear Creek</p>
-			<p>June 7, 2014</p>
-			<p>Highside Adventures</p>
-			<p>Rapids: Class III-IV</p>
-			<p>Water flow: high, 950-975 cubic feet per second</p>
-			<p>The final stretch of the Highside Adventures trip over violent class III and IV rapids was wild, with two passenger dumps in the span of a few river bends. The second time Kenneth Barkley, 43, of Brighton, went overboard, he did not survive.</p>
-			<p>Just through Lower Beaver Falls, the raft Barkley rode in struck a bridge support head on, despite the crew’s frantic back paddling. The nose of the raft hit the concrete. The raft turned sideways and instantly flipped, the bottom of the boat now along the bridge support. “Highside left!” the guide had shouted, trying to prevent the flip. But as the boat wrapped around the bridge support, all eight passengers, including the guide, were dumped into the 40-degree water.</p>
-			<p>The crumpling raft and the ensuing chaos in June 2014 were captured by a passenger’s GoPro helmet camera and posted on YouTube. Most of the eight passengers were able to swim to shore. One grabbed a tree limb and waited for a guide. Another was pulled into a boat as she floated downstream.</p>
-			<p>With everyone back in the raft, and the boat heading downstream toward more rapids, the passengers were celebrating — and ignoring paddle commands. Without paddlers, the raft was spinning when it went, backward, over the top of a barely submerged rock.</p>
-			<p>The jolt of the rock knocked Barkley off balance and out of the back of the raft.</p>
-			<p>As the boat continued over several more rocks, every passenger but one fell into the river.</p>
-			<p>Barkley floated downstream on his back, head downstream. The guide of his boat, 24-year-old John Myre, tried to reach out a paddle, but Barkley wasn’t close enough to grab it. The guide said he motioned for Barkley to swim toward shore, but he continued to float on his back, arms outstretched. Two other passengers told park rangers they saw Barkley try to swim but he seemed exhausted.</p>
-			<p>With the rest of the passengers and the boat on shore, Myre ran downstream to try to catch up to Barkley, who had far outpaced his raft, trying to reach him before he floated through Class V expert-level rapids downstream. Two other guides joined the search down the river, one driving Barkley’s wife’s car.</p>
-			<p>They saw him two or three times more, once without a life jacket, and always floating, making no attempt to swim.</p>
-			<p>Barkley’s body was found about a half-hour later, near U.S.&nbsp;6, about 7&nbsp;miles from where he fell overboard.</p>
-			<p>&nbsp;</p>
-			<p>Double Knife Rapid, Clear Creek</p>
-			<p>Mile Hi Rafting</p>
-			<p>July 4, 2015</p>
-			<p>Rapds: Class IV</p>
-			<p>Water flow: 640-850 cubic feet per second</p>
-			<p>Chun Yip “Daniel” Cheong, 21, and his friends were visiting Colorado from Wichita, Kan., for the Fourth of July weekend last summer when they rafted Clear Creek. They chose a trip with expert-level rapids, Class IV and V, a decision Cheong’s friend Weng Hing later called a mistake.</p>
-			<p>The friends “understood the difficulty level” but “underestimated the danger,” Hing told a state parks investigator.</p>
-			<p>As they headed into Double Knife Rapid, their raft clipped a rock wall on the left side of the rapid. “Get down,” shouted 43-year-old guide Ryan Wiese. Upon impact, three of the five passengers fell overboard.</p>
-			<p>Two began swimming to shore, but Cheong was floating with his arms outstretched. The river tossed him through a rocky section called “the reefs,” and he slammed into exposed boulders.</p>
-			<p>As another raft tried to reach Cheong, that boat hit a rock, and two passengers were knocked into the water. Both swam to shore. Cheong’s guide tossed him a “throw bag,” and yelled, “Grab the rope!” and then, “Turn over and swim!”</p>
-			<p>His friend Hing tried to grab him, but he couldn’t.</p>
-			<p>Cheong was in the water three to five minutes before he was pulled into a raft and brought to shore, where guides ripped off his life jacket and started CPR. His face was blue. Guides shouted to nearby rock climbers to call 911, and help arrived within about seven minutes.</p>
-			<p>Cheong’s body was sent to Malaysia, with his family. Hing told the state investigator that “maybe safety-wise, things could have been better.”</p>
-			<p>“More boats in the water would have been better,” he said. “More people are around, you could get to another boat.”</p>
-			<p>&nbsp;</p>
-			<p>Horseshoe Rapid, Cache la Poudre River</p>
-			<p>July 7, 2015</p>
-			<p>A1 Wildwater</p>
-			<p>Rapids: Class III</p>
-			<p>Water flow: 858 cubic feet per second</p>
-			<p>It was a cloudy, chilly day for a river float when Ronald Palmer, 77, and six of his children and grandchildren rafted the Poudre River while vacationing in Colorado. The group of seven, who showed up at A1 Wildwater in Fort Collins last July in jeans and flannel shirts, was split into three groups for the float.</p>
-			<p>“I’m having the time of my life,” Palmer told his family just minutes before he fell overboard.</p>
-			<p>It was the California grandfather’s first rafting trip, and the first for his grandchildren.</p>
-			<p>They were about a mile in when the raft Palmer rode in hit a “hole,” a river feature where the water comes back on itself upstream. The impact and sudden change in momentum caused Palmer and two others to fall overboard. Their guide, 20-year-old Alex Owens, shouted to the three swimmers, “Swim back to us!” and paddled the raft toward them. Two were back in the raft within 15 seconds, but Palmer didn’t try to swim and instead bobbed straight up and down.</p>
-			<p>As the raft floated through Thunder Alley, a trio of rapids, so did Palmer. The raft would get near him, and then they would separate. The guide kept blowing his whistle, yelling at Palmer to swim. After several minutes, the guide got close enough to Palmer to pull him into the boat. He noticed then that Palmer’s pants had fallen around his ankles, causing a drag and possibly preventing him from swimming.</p>
-			<p>He was not responsive.</p>
-			<p>On the bank of the river, one guide began CPR while another ran to the road, flagged down a car on Colorado&nbsp;14 and asked the driver to call 911 and send help. Palmer “kinda blinked, and it looked like he tried to take a breath of air. And after that, there was nothing,” a guide said later. They continued CPR for about 35 minutes until emergency responders arrived, but Palmer was not revived. The cause of death was sudden cardiac arrest because of&nbsp;“environmental stress.”</p>
-			<p>&nbsp;</p>
-			<p>Three Rocks Rapid, Arkansas River</p>
-			<p>June 13, 2015</p>
-			<p>Whitewater Adventure Outfitters</p>
-			<p>Rapids: Class IV-V</p>
-			<p>Water flow: 4,400-5,410 cubic feet per second</p>
-			<p>On the hot day in June 2015 that Eduardo Hernandez died on the Arkansas River, 19 people in his five-raft float trip were tossed into the whitewater at the same time.</p>
-			<p>The second boat to enter Three Rocks Rapid struck a large wave, dumping all of its passengers. The raft behind it — the one carrying 52-year-old Hernandez of Lakewood — flipped and spilled all of its passengers when it reached the frothy Class V wave. The fourth boat in Whitewater Adventure Outfitters’ chain struck the third and was held by the forces of a whitewater “hole.” All of its passengers washed out.</p>
-			<p>All the boaters were recovered safely except Hernandez, whose lips were blue when a guide pulled him back into a raft.</p>
-			<p>Two state parks rangers were on patrol along the Bighorn Sheep Canyon section of the Arkansas when they saw all the people in the river and two commercial rafts in pursuit trying to collect them. Officer Samuel Jordan launched his kayak and crossed the Arkansas to help, radioing for emergency responders. On shore, he tore off Hernandez’s helmet and wetsuit to start CPR.</p>
-			<p>Hernandez was not revived. His official cause of death, according to an autopsy, was drowning, complicated by obesity and an enlarged heart.</p>
-			<p>&nbsp;</p>
-			<p>Squeeze Box in the Royal Gorge, Arkansas River</p>
-			<p>June 14, 2014</p>
-			<p>Raft Masters Inc.</p>
-			<p>Rapids: Class IV-V</p>
-			<p>Water flow: 2,970-3,200 cubic feet per second</p>
-			<p>The guide navigating the raft carrying Chris Sevilla down the Arkansas asked the Colorado Springs man several times whether he should continue with the whitewater trip as it got increasingly more hairy. Sevilla, 45, was worn out from zip lining the day before, his arms too tired to paddle. He was short of breath.</p>
-			<p>At lunch that June 2014 day, Sevilla insisted he felt better and “absolutely wanted to continue rafting,” according to a state parks report on his death.</p>
-			<p>As the boat entered the Royal Gorge, guide James Palmer, 43, had Sevilla sit in the middle of the raft so he could rest. In a section of the river called the Narrows, the raft was thrust by the Squeeze Box rapid into a sheer rock wall on the right side of the river.</p>
-			<p>The raft began to capsize.</p>
-			<p>“Highside!,” yelled Palmer, trying to shift the weight distribution of the raft.</p>
-			<p>They flipped.</p>
-			<p>As another guide began pulling people into his boat, Palmer was able to flip his raft back over and grab onto Sevilla and the raft. But he lost his grip on both as the men entered the next rapid, Wall Slammer.</p>
-			<p>Another guide, with the help of three passengers, pulled Sevilla into their boat. But he was not responsive, and his face was purple. By this time, the raft was hitting Boat Eater and Triple Drop rapids, and the guide couldn’t pull to the side of the river and start CPR until they were through the whitewater.</p>
-			<p>The nearest help came by train, along the Royal Gorge Railroad.</p>
-			<p>Sevilla was loaded onto the train, where CPR continued until they connected with Freemont County emergency services in Cañon City. About an hour passed from the time of the accident until Sevilla reached Cañon City, where he died.</p>
-			<p>&nbsp;</p>
-			<p>Three Rocks Rapid, Arkansas River</p>
-			<p>June 10, 2014</p>
-			<p>Royal Gorge Rafting</p>
-			<p>Rapids: Class IV</p>
-			<p>Water flow: 3,340 cubic feet per second</p>
-			<p>The safety speech along the banks of the Arkansas River covered everything. But a group of rafters visiting Colorado from Oklahoma didn’t actually expect they would fall into the rushing, frigid whitewater.</p>
-			<p>“I didn’t understand it was going to be that bad,” Steve Leim of Stillwater would later tell a Colorado State Parks investigator. “I did not think the boat was going to flip over.” The group, he said, didn’t understand “the power of the water.”</p>
-			<p>Van Hodges, 48, from Enid was on a half-day raft trip through the Bighorn Sheep Canyon section of the river the day he died. Five passengers, including Hodges, were tossed into the water when their raft hit the top of a rapid called Three Rocks. Their guide, Brian Botelho, 29, &nbsp;yelled and pointed toward the left side of the river, showing the people in the water they should swim left to avoid a whitewater “hole” in the middle of the river. Botelho paddled the same direction and began plucking people back into the boat.</p>
-			<p>As the raft following Botelho’s entered the rapid, its passengers — shocked at the sight of people in the water — stopped paddling. Their raft drifted sideways and into the hole, where it flipped and everyone fell out.</p>
-			<p>Besides Hodges, the rest of the passengers were pulled into rafts or were able to swim to shore. Hodges, witnesses said, made no attempt to swim as a guide shouted to him to roll onto his stomach. A kayaker on the trip, there to help in case passengers fell into the river, told Hodges to grab his kayak.</p>
-			<p>Instead, Hodges grabbed for the guide, something passengers were told not to do before the trip launched. The guide swatted Hodges’ hands away and again told him to hold onto the kayak. When Hodges did not respond, the guide grabbed the back of his life jacket and floated him toward shore.</p>
-			<p>Some people in the same Oklahoma group had floated the Arkansas the prior summer and remembered the trip as “too easy,” Earl Madison, then 64, told state investigators. But they noticed as soon as they got on the water that deadly trip in 2014 that the waves were bigger, the water was faster.</p>
-			<p>“Large waves came off a rock and knocked me over my friend and off the boat,” Madison said. “Chaos from there, swimming, guide yelling to swim, guide stuck out paddle and pulled me in.”</p>
-			<p>While he was in the water, Madison felt “a lot of stress on the body” and that his “chest felt like it was going to cave in.”</p>
-			<p>A rotating team of people, including a raft passenger who was a nurse, administered CPR on Hodges for about 40 minutes. The official cause of death was drowning.</p>
-			<p>&nbsp;</p>
-			<p>Pine Creek Rapid, Arkansas River</p>
-			<p>July 24, 2014</p>
-			<p>Timberline Tours</p>
-			<p>Rapids: Class V</p>
-			<p>Water flow: 1,250 cubic feet per second</p>
-			<p>Mary Johnson, a 57-year-old woman from Dallas, had been rafting eight times before but never on a Class V rapid. And she’d never fallen out of a raft.</p>
-			<p>More than once, the Timberline Tours guide offered to let Mary and her husband, Ken, “portage” the most aggressive rapid on the trip — a Class V beast called Pine Creek — meaning they could walk the shoreline and get back in the raft after the rapid. But the couple, and everyone else on the two-raft trip that July 2014 day, chose to go through it.</p>
-			<p>Two kayakers, on the trip to help in case anyone fell into the river, navigated Pine Creek Rapid first and were followed by the first raft. They waited 30 yards downstream, ready with a throw rope should the second raft, carrying the Johnsons, have any trouble.</p>
-			<p>The Johnsons’ raft struck a rock, and their guide, Jason Connolly, 41, bounced out. He swam toward the raft and tried to climb back in. But before he could, the raft hit a hydraulic hole and began “surfing” — bouncing and spinning on top of the hole. The tug of the river dragged Connolly under the raft and downstream about 15 yards before he was able to swim to shore.</p>
-			<p>Meanwhile, the Johnsons and another man were thrown into the river as the raft surfed in place. The other passenger was sucked under the raft and spit out, able to swim to shore. The Johnsons floated downstream.</p>
-			<p>When Connolly reached the shore, he ran back upstream to the raft and threw a rope to its remaining passengers, pulling the raft to shore. This took about five minutes, as the Johnsons were swept away in the whitewater.</p>
-			<p>While Connolly was rescuing the raft, Ken Johnson had swum aggressively toward shore about 200 yards downstream and was able to grab a rope thrown by another guide.</p>
-			<p>Photographs taken by a photographer positioned beside the river for action shots of the trip show Mary hitting several rocks as she was tossed downstream. One rock stopped her and submerged her before she washed through the Pine Creek Hole.</p>
-			<p>When Mary resurfaced, conscious but distressed, she briefly grabbed the bow of a rescue kayak. But by then she was weak. She&nbsp;let go and was again washed downstream. The kayaker pursued her but wasn’t able to push her to shore until after Triple Drop Rapid, where Mary bounced through more rocks and turbulent water. Her head was no longer above water, and she was unconscious after floating 650 yards down a steeply graded section of the Arkansas containing “numerous powerful waves, holes and large boulders.”</p>
-			<p>Guides began CPR as Connolly climbed up the river bank to U.S.&nbsp;&nbsp;24, where he flagged down a motorist and used a cellphone to call 911.</p>
-			<p>Connolly then found Ken Johnson and waited with him until Mary’s body was evacuated by Chaffee County emergency services, which&nbsp;arrived about 35 minutes after she was pulled from&nbsp;the river. The cause of death was ruled as drowning.</p>
-			<p>Ken would tell a state investigator that his memory of the events was limited, but he remembered being “flipped out of the raft” and feeling “exhausted” when he grabbed the rope and reached the shore.</p>
-			<p>“When you do this, you don’t think this is going to happen,” he said.</p>
-			<p>&nbsp;</p>
-			<p>Dizzy Lizzy Rapid, Clear Creek</p>
-			<p>July 18, 2015</p>
-			<p>Mile Hi Rafting</p>
-			<p>Rapid: Class III</p>
-			<p>Water flow: 350 cubic feet per second</p>
-			<p>Minutes before Erik Luna unexpectedly fell backward out of a raft into Clear Creek, a photographer on the riverbank took the perfect action shot: the family smiling and laughing in a spray of whitewater.</p>
-			<p>Luna had just given his rafting guide a thumbs up, and then he was in the river. As the 36-year-old from Carlsbad, N.M., floated downstream, his wife shouted, “He has asthma!”</p>
-			<p>Rafting guide Shawn Stephens, 25, reached out a paddle, and Luna grabbed hold. But he wasn’t able to keep his grip. Luna, who was on the rafting trip with five relatives, floated downstream through Dizzy Lizzy, a Class III rapid.</p>
-			<p>The raft knocked into a rock, and then 13-year-old Deric Luna was nearly tossed into the river, injuring his knee. The guide was able to quickly pull him back into the boat before he fell out completely.</p>
-			<p>As the raft chased Erik Luna down the river, his relatives were panicking and had stopped listening to paddling commands, according to the Parks and Wildlife&nbsp;report. Stephens navigated his raft to shore then threw a rescue rope at Luna.</p>
-			<p>But by this point, Luna was “unconscious and face down in the water,” according to the report.</p>
-			<p>Stephens left his passengers on shore and hopped in the other raft on the trip as it chased Luna through Powerline Rapid. The guide reached Luna and brought him to shore, where he began CPR. The trip photographer, meanwhile, called 911 when she realized a passenger was face down and an unconscious in the water.</p>
-			<p>Guides were unable to help Luna resume breathing. His death and the injury to Deric Luna’s knee were “consistent with inherent injuries and scenarios that can take place in Class III whitewater,” according to the state parks report.</p>
-			<p>&nbsp;</p>
-			<p>Smelter Rapid, Lower Animas River</p>
-			<p>June 16, 2015</p>
-			<p>Mild to Wild</p>
-			<p>Rapid: Class IV</p>
-			<p>Water flow: high, 4,100 cubic feet per second</p>
-			<p>It’s an action-packed stretch of the Animas River, where whitewater turbulence comes in five back-to-back rapids: Smelter Wave, Corkscrew, Corner Pocket, Ponderosa and Clocktower.</p>
-			<p>What was supposed to be a fun family adventure turned deadly at Corner Pocket in&nbsp;June 2015.</p>
-			<p>Jose Soto, 57, of Farmington, N.M., and three of his family members went overboard as their 24-year-old Mild to Wild raft guide entered the Class IV rapid off line and sideways. One passenger swam to shore and two were pulled back into rafts, but Soto continued through the rapids with a “fixed stare and teeth clenched,” according to a Parks and Wildlife&nbsp;report. By the time he was pulled into a boat, Soto was unconscious and not responsive. He had no pulse when guides started CPR.</p>
-			<p>Soto was described by one of the guides as “very jolly” and the “biggest person I could pull into a raft, but not bigger than the equipment.” Some of his family had floated the same stretch of the Animas, but the river wasn’t as high as it was last June.</p>
-			<p>Soto’s 27-year-old daughter, who had been tossed out of the raft and rescued, ran to him as soon as she reached shore.</p>
-			<p>&nbsp;</p>
-			<p>Double Knife Rapid, Clear Creek</p>
-			<p>May 22, 2015</p>
-			<p>All American Adventures</p>
-			<p>Rapids: Class IV</p>
-			<p>Water flow: 350-620 cubic feet per second</p>
-			<p>Michelle Math, a 48-year-old mother from Wylie, Texas, &nbsp;was “mildly nervous” as she put on a wetsuit, high-top booties and a helmet for her first whitewater rafting trip last May, according to a Parks and Wildlife investigation.</p>
-			<p>Math and her 13-year-old daughter were with a group of mothers and daughters who traveled to Colorado for the girls’ soccer tournament. Moms were in one raft, and most of the girls were in another.</p>
-			<p>Math and another woman who was also nervous sat just in front of their rafting guide in the “sweep” boat, the last raft in line on an early-season, chilly trip down Clear Creek.</p>
-			<p>After the accident, multiple passengers told a state investigator the raft carrying Math was “very off balance,” making it hard to navigate, and that they had complained about this to the guide. The three largest women were on one side of the boat, while the three smallest were on the other. One woman “said that rafting companies need to tell people the dangers associated with rafting and that she was shocked it could end in death.”</p>
-			<p>As guide Kyle Kenefick, 29, entered Double Knife Rapid, his raft veered too far to the right, and he “couldn’t get it back over,” according to the state report. The raft bumped a rock and tipped left, tossing Math, the guide and four other passengers into the river.</p>
-			<p>When a state investigator asked Kenefick what factors caused the raft to go too far right, he “said he didn’t have a good reason why and that he preferred not to answer that question,” according to the report.</p>
-			<p>Kenefick was able to grab the raft and hop back in soon after he was thrown overboard, then he pulled three passengers back into the boat. Math and another passenger floated downstream. His crew, now “scared and panicking,” were no longer working as a team as Kenefick chased his lost passengers down the creek. In a rapid called Hell’s Corner, the raft got hung up on a rock and half the crew lost their paddles, delaying their rescue attempt.</p>
-			<p>As Math floated, her life jacket was riding high, a common issue “particularly on overweight people,” the state report noted. She was screaming.</p>
-			<p>A second raft on the trip, carrying Math’s daughter, also was chasing her down the creek. Math’s daughter, two other teenagers and the petite raft guide in that boat grabbed Math’s life jacket but were not able to pull her into the raft. Instead, they tried to keep her head above water as they tore through Hell’s Corner.</p>
-			<p>Eventually, Math was pulled to shore by two kayakers from another float trip at the Terminator 2 rapid. She had no pulse, and CPR compressions did not revive her. She was pronounced dead by emergency responders along the bank of the river. Cause of death was drowning.</p>
-			<p>The state report noted the rafting company did not record customers’ medical conditions and had a policy that “if a customer can’t fit in a life jacket, they’re not allowed on the trip.” All American Adventures did not have a formal emergency action plan, besides using a cellphone to call 911.</p>
-			<p>The investigation found no violation of state law despite “allegations of the raft being improperly loaded,” the report said.</p>
-			<p>&nbsp;</p>
-			<p>Hell’s Half Mile, Slaughterhouse section of the Roaring Fork River</p>
-			<p>June 16, 2014</p>
-			<p>Blazing Adventures</p>
-			<p>Rapids: Class IV</p>
-			<p>Water flow: 1,300 cubic feet per second</p>
-			<p>Paul Sizemore and his&nbsp;significant other, Jennifer Lenze, were on a belated “babymoon” in Aspen after the birth of their second child when they saw a rafting video while checking in at the&nbsp;Ritz hotel.</p>
-			<p>They thought they were both up for a Class IV trip down the Roaring Fork, though Lenze&nbsp;was nervous as they signed waivers on the bus ride to the river. Sizemore, 44, was “the most fit man I’ve ever known,” Lenze said in an interview this week, on the two-year anniversary of his death. He ran marathons and long-distance&nbsp;relays.</p>
-			<p>The two rafts and a safety kayaker ran the first major rapid with no trouble then pulled on shore to rest, drink water and talk about the upcoming rapid, Hell’s Half Mile.</p>
-			<p>When they started their next difficult run, the raft carrying Sizemore and Lenz stalled after going over the second ledge in a steep section of frothy whitewater. The boat momentarily “surfed,” held in place by the hydraulic hole. The raft turned left, and Sizemore and another man tumbled into the river.</p>
-			<p>Guide Michael Lewis, 42, extended his paddle to Sizemore so he could grab on, but both passengers were swept downstream.</p>
-			<p>Instead of swimming toward shore, Sizemore was looking to a guide in the safety kayak for help, the investigative report says. They weren’t able to reach each other because of the turbulent and steep shoot of the river. The guide in the other raft tossed Sizemore a rope, but he didn’t catch it.</p>
-			<p>Soon after, the three women in Lewis’ raft — including Lenze — were able to pull Sizemore back into the boat. He was “talking and awake” at first, but then his “eyes rolled back,” according to a Parks and Wildlife&nbsp;report.</p>
-			<p>Guides began CPR in the raft and moved Sizemore to shore. Lenze was “hysterical,” according to the report. Someone walked her upstream, away from Sizemore, to try to calm her down. Lenze says she was screaming for help, wondering why no helicopter or ambulance had arrived. Aspen firefighters, securing Sizemore in a litter attached to a rope, pulled him out of the river canyon to a bike path above, as CPR continued.</p>
-			<p>Sizemore died after being in the river for an estimated two and a half minutes, a “short but violent swim,” according to the state report.</p>
-			<p>When the water flow in this section of the river is 1,800 cubic feet per second —- 500 cfs higher than it was the June 2014 day Sizemore died — Blazing Adventures takes only those 18 and older. It does not require customers to have whitewater experience.</p>
-			<p></p>		
+			
+			<div id="barkley-profile">
+				<h4>Kenneth Barkley</h4>
+				<p><strong>Lower Beaver Falls, Clear Creek</strong></p>
+				<p class="slideshow-intro">June 7, 2014<br />
+				Highside Adventures<br />
+				Rapids: Class III-IV<br />
+				Water flow: high, 950-975 cubic feet per second</p>
+				<p>The final stretch of the Highside Adventures trip over violent class III and IV rapids was wild, with two passenger dumps in the span of a few river bends. The second time Kenneth Barkley, 43, of Brighton, went overboard, he did not survive.</p>
+				<p>Just through Lower Beaver Falls, the raft Barkley rode in struck a bridge support head on, despite the crew&rsquo;s frantic back paddling. The nose of the raft hit the concrete. The raft turned sideways and instantly flipped, the bottom of the boat now along the bridge support. &ldquo;Highside left!&rdquo; the guide had shouted, trying to prevent the flip. But as the boat wrapped around the bridge support, all eight passengers, including the guide, were dumped into the 40-degree water.</p>
+				<p>The crumpling raft and the ensuing chaos in June 2014 were captured by a passenger&rsquo;s GoPro helmet camera and posted on YouTube. Most of the eight passengers were able to swim to shore. One grabbed a tree limb and waited for a guide. Another was pulled into a boat as she floated downstream.</p>
+				<p>With everyone back in the raft, and the boat heading downstream toward more rapids, the passengers were celebrating &mdash; and ignoring paddle commands. Without paddlers, the raft was spinning when it went, backward, over the top of a barely submerged rock.</p>
+				<p>The jolt of the rock knocked Barkley off balance and out of the back of the raft.</p>
+				<p>As the boat continued over several more rocks, every passenger but one fell into the river.</p>
+				<p>Barkley floated downstream on his back, head downstream. The guide of his boat, 24-year-old John Myre, tried to reach out a paddle, but Barkley wasn&rsquo;t close enough to grab it. The guide said he motioned for Barkley to swim toward shore, but he continued to float on his back, arms outstretched. Two other passengers told park rangers they saw Barkley try to swim but he seemed exhausted.</p>
+				<p>With the rest of the passengers and the boat on shore, Myre ran downstream to try to catch up to Barkley, who had far outpaced his raft, trying to reach him before he floated through Class V expert-level rapids downstream. Two other guides joined the search down the river, one driving Barkley&rsquo;s wife&rsquo;s car.</p>
+				<p>They saw him two or three times more, once without a life jacket, and always floating, making no attempt to swim.</p>
+				<p>Barkley&rsquo;s body was found about a half-hour later, near U.S.&nbsp;6, about 7&nbsp;miles from where he fell overboard.</p>
+				<div class="row">
+					<p><a class="go-to-map left" id="barkley">View on map</a><a class="right" href="javascript:scrollDownTo('#rafting-death-map',60);">Return to map</a></p>
+				</div>
+			</div>
+
+			<div id="cheong-profile">
+				<h4>Chun Yip &ldquo;Daniel&rdquo; Cheong</h4>
+				<p><strong>Double Knife Rapid, Clear Creek</strong></p>
+				<p class="slideshow-intro">Mile Hi Rafting<br />
+				July 4, 2015<br />
+				Rapds: Class IV<br />
+				Water flow: 640-850 cubic feet per second</p>
+				<p>Chun Yip &ldquo;Daniel&rdquo; Cheong, 21, and his friends were visiting Colorado from Wichita, Kan., for the Fourth of July weekend last summer when they rafted Clear Creek. They chose a trip with expert-level rapids, Class IV and V, a decision Cheong&rsquo;s friend Weng Hing later called a mistake.</p>
+				<p>The friends &ldquo;understood the difficulty level&rdquo; but &ldquo;underestimated the danger,&rdquo; Hing told a state parks investigator.</p>
+				<p>As they headed into Double Knife Rapid, their raft clipped a rock wall on the left side of the rapid. &ldquo;Get down,&rdquo; shouted 43-year-old guide Ryan Wiese. Upon impact, three of the five passengers fell overboard.</p>
+				<p>Two began swimming to shore, but Cheong was floating with his arms outstretched. The river tossed him through a rocky section called &ldquo;the reefs,&rdquo; and he slammed into exposed boulders.</p>
+				<p>As another raft tried to reach Cheong, that boat hit a rock, and two passengers were knocked into the water. Both swam to shore. Cheong&rsquo;s guide tossed him a &ldquo;throw bag,&rdquo; and yelled, &ldquo;Grab the rope!&rdquo; and then, &ldquo;Turn over and swim!&rdquo;</p>
+				<p>His friend Hing tried to grab him, but he couldn&rsquo;t.</p>
+				<p>Cheong was in the water three to five minutes before he was pulled into a raft and brought to shore, where guides ripped off his life jacket and started CPR. His face was blue. Guides shouted to nearby rock climbers to call 911, and help arrived within about seven minutes.</p>
+				<p>Cheong&rsquo;s body was sent to Malaysia, with his family. Hing told the state investigator that &ldquo;maybe safety-wise, things could have been better.&rdquo;</p>
+				<p>&ldquo;More boats in the water would have been better,&rdquo; he said. &ldquo;More people are around, you could get to another boat.&rdquo;</p>
+				<div class="row">
+					<p><a class="go-to-map left" id="cheong">View on map</a><a class="right" href="javascript:scrollDownTo('#rafting-death-map',60);">Return to map</a></p>
+				</div>
+			</div>
+
+			<div id="palmer-profile">
+				<h4>Ronald Palmer</h4>
+				<p><strong>Horseshoe Rapid, Cache la Poudre River</strong></p>
+				<p class="slideshow-intro">July 7, 2015<br />
+				A1 Wildwater<br />
+				Rapids: Class III<br />
+				Water flow: 858 cubic feet per second</p>
+				<p>It was a cloudy, chilly day for a river float when Ronald Palmer, 77, and six of his children and grandchildren rafted the Poudre River while vacationing in Colorado. The group of seven, who showed up at A1 Wildwater in Fort Collins last July in jeans and flannel shirts, was split into three groups for the float.</p>
+				<p>&ldquo;I&rsquo;m having the time of my life,&rdquo; Palmer told his family just minutes before he fell overboard.</p>
+				<p>It was the California grandfather&rsquo;s first rafting trip, and the first for his grandchildren.</p>
+				<p>They were about a mile in when the raft Palmer rode in hit a &ldquo;hole,&rdquo; a river feature where the water comes back on itself upstream. The impact and sudden change in momentum caused Palmer and two others to fall overboard. Their guide, 20-year-old Alex Owens, shouted to the three swimmers, &ldquo;Swim back to us!&rdquo; and paddled the raft toward them. Two were back in the raft within 15 seconds, but Palmer didn&rsquo;t try to swim and instead bobbed straight up and down.</p>
+				<p>As the raft floated through Thunder Alley, a trio of rapids, so did Palmer. The raft would get near him, and then they would separate. The guide kept blowing his whistle, yelling at Palmer to swim. After several minutes, the guide got close enough to Palmer to pull him into the boat. He noticed then that Palmer&rsquo;s pants had fallen around his ankles, causing a drag and possibly preventing him from swimming.</p>
+				<p>He was not responsive.</p>
+				<p>On the bank of the river, one guide began CPR while another ran to the road, flagged down a car on Colorado&nbsp;14 and asked the driver to call 911 and send help. Palmer &ldquo;kinda blinked, and it looked like he tried to take a breath of air. And after that, there was nothing,&rdquo; a guide said later. They continued CPR for about 35 minutes until emergency responders arrived, but Palmer was not revived. The cause of death was sudden cardiac arrest because of&nbsp;&ldquo;environmental stress.&rdquo;</p>
+				<div class="row clearfix rowbottom">
+					<p><a class="go-to-map left" id="palmer">View on map</a><a class="right" href="javascript:scrollDownTo('#rafting-death-map',60);">Return to map</a></p>
+				</div>
+			</div>
+			
+			<div id="hernandez-profile">
+				<h4>Eduardo Hernandez</h4>
+				<p><strong>Three Rocks Rapid, Arkansas River</strong></p>
+				<p class="slideshow-intro">June 13, 2015<br />
+				Whitewater Adventure Outfitters<br />
+				Rapids: Class IV-V<br />
+				Water flow: 4,400-5,410 cubic feet per second</p>
+				<p>On the hot day in June 2015 that Eduardo Hernandez died on the Arkansas River, 19 people in his five-raft float trip were tossed into the whitewater at the same time.</p>
+				<p>The second boat to enter Three Rocks Rapid struck a large wave, dumping all of its passengers. The raft behind it &mdash; the one carrying 52-year-old Hernandez of Lakewood &mdash; flipped and spilled all of its passengers when it reached the frothy Class V wave. The fourth boat in Whitewater Adventure Outfitters&rsquo; chain struck the third and was held by the forces of a whitewater &ldquo;hole.&rdquo; All of its passengers washed out.</p>
+				<p>All the boaters were recovered safely except Hernandez, whose lips were blue when a guide pulled him back into a raft.</p>
+				<p>Two state parks rangers were on patrol along the Bighorn Sheep Canyon section of the Arkansas when they saw all the people in the river and two commercial rafts in pursuit trying to collect them. Officer Samuel Jordan launched his kayak and crossed the Arkansas to help, radioing for emergency responders. On shore, he tore off Hernandez&rsquo;s helmet and wetsuit to start CPR.</p>
+				<p>Hernandez was not revived. His official cause of death, according to an autopsy, was drowning, complicated by obesity and an enlarged heart.</p>
+				<div class="row clearfix rowbottom">
+					<p><a class="go-to-map left" id="hernandez">View on map</a><a class="right" href="javascript:scrollDownTo('#rafting-death-map',60);">Return to map</a></p>
+				</div>
+			</div>
+			
+			<div id="sevilla-profile">
+				<h4>Chris Sevilla</h4>
+				<p><strong>Squeeze Box in the Royal Gorge, Arkansas River</strong></p>
+				<p class="slideshow-intro">June 14, 2014<br />
+				Raft Masters Inc.<br />
+				Rapids: Class IV-V<br />
+				Water flow: 2,970-3,200 cubic feet per second</p>
+				<p>The guide navigating the raft carrying Chris Sevilla down the Arkansas asked the Colorado Springs man several times whether he should continue with the whitewater trip as it got increasingly more hairy. Sevilla, 45, was worn out from zip lining the day before, his arms too tired to paddle. He was short of breath.</p>
+				<p>At lunch that June 2014 day, Sevilla insisted he felt better and &ldquo;absolutely wanted to continue rafting,&rdquo; according to a state parks report on his death.</p>
+				<p>As the boat entered the Royal Gorge, guide James Palmer, 43, had Sevilla sit in the middle of the raft so he could rest. In a section of the river called the Narrows, the raft was thrust by the Squeeze Box rapid into a sheer rock wall on the right side of the river.</p>
+				<p>The raft began to capsize.</p>
+				<p>&ldquo;Highside!,&rdquo; yelled Palmer, trying to shift the weight distribution of the raft.</p>
+				<p>They flipped.</p>
+				<p>As another guide began pulling people into his boat, Palmer was able to flip his raft back over and grab onto Sevilla and the raft. But he lost his grip on both as the men entered the next rapid, Wall Slammer.</p>
+				<p>Another guide, with the help of three passengers, pulled Sevilla into their boat. But he was not responsive, and his face was purple. By this time, the raft was hitting Boat Eater and Triple Drop rapids, and the guide couldn&rsquo;t pull to the side of the river and start CPR until they were through the whitewater.</p>
+				<p>The nearest help came by train, along the Royal Gorge Railroad.</p>
+				<p>Sevilla was loaded onto the train, where CPR continued until they connected with Freemont County emergency services in Cañon City. About an hour passed from the time of the accident until Sevilla reached Cañon City, where he died.</p>
+				<div class="row clearfix rowbottom">
+					<p><a class="go-to-map left" id="sevilla">View on map</a><a class="right" href="javascript:scrollDownTo('#rafting-death-map',60);">Return to map</a></p>
+				</div>
+			</div>
+				
+			<div id="hodges-profile">
+				<h4>Van Hodges</h4>
+				<p><strong>Three Rocks Rapid, Arkansas River</strong></p>
+				<p class="slideshow-intro">June 10, 2014<br />
+				Royal Gorge Rafting<br />
+				Rapids: Class IV<br />
+				Water flow: 3,340 cubic feet per second</p>
+				<p>The safety speech along the banks of the Arkansas River covered everything. But a group of rafters visiting Colorado from Oklahoma didn&rsquo;t actually expect they would fall into the rushing, frigid whitewater.</p>
+				<p>&ldquo;I didn&rsquo;t understand it was going to be that bad,&rdquo; Steve Leim of Stillwater would later tell a Colorado State Parks investigator. &ldquo;I did not think the boat was going to flip over.&rdquo; The group, he said, didn&rsquo;t understand &ldquo;the power of the water.&rdquo;</p>
+				<p>Van Hodges, 48, from Enid was on a half-day raft trip through the Bighorn Sheep Canyon section of the river the day he died. Five passengers, including Hodges, were tossed into the water when their raft hit the top of a rapid called Three Rocks. Their guide, Brian Botelho, 29, &nbsp;yelled and pointed toward the left side of the river, showing the people in the water they should swim left to avoid a whitewater &ldquo;hole&rdquo; in the middle of the river. Botelho paddled the same direction and began plucking people back into the boat.</p>
+				<p>As the raft following Botelho&rsquo;s entered the rapid, its passengers &mdash; shocked at the sight of people in the water &mdash; stopped paddling. Their raft drifted sideways and into the hole, where it flipped and everyone fell out.</p>
+				<p>Besides Hodges, the rest of the passengers were pulled into rafts or were able to swim to shore. Hodges, witnesses said, made no attempt to swim as a guide shouted to him to roll onto his stomach. A kayaker on the trip, there to help in case passengers fell into the river, told Hodges to grab his kayak.</p>
+				<p>Instead, Hodges grabbed for the guide, something passengers were told not to do before the trip launched. The guide swatted Hodges&rsquo; hands away and again told him to hold onto the kayak. When Hodges did not respond, the guide grabbed the back of his life jacket and floated him toward shore.</p>
+				<p>Some people in the same Oklahoma group had floated the Arkansas the prior summer and remembered the trip as &ldquo;too easy,&rdquo; Earl Madison, then 64, told state investigators. But they noticed as soon as they got on the water that deadly trip in 2014 that the waves were bigger, the water was faster.</p>
+				<p>&ldquo;Large waves came off a rock and knocked me over my friend and off the boat,&rdquo; Madison said. &ldquo;Chaos from there, swimming, guide yelling to swim, guide stuck out paddle and pulled me in.&rdquo;</p>
+				<p>While he was in the water, Madison felt &ldquo;a lot of stress on the body&rdquo; and that his &ldquo;chest felt like it was going to cave in.&rdquo;</p>
+				<p>A rotating team of people, including a raft passenger who was a nurse, administered CPR on Hodges for about 40 minutes. The official cause of death was drowning.</p>
+				<div class="row clearfix rowbottom">
+					<p><a class="go-to-map left" id="hodges">View on map</a><a class="right" href="javascript:scrollDownTo('#rafting-death-map',60);">Return to map</a></p>
+				</div>
+			</div>
+				
+			<div id="johnson-profile">
+				<h4>Mary Johnson</h4>
+				<p><strong>Pine Creek Rapid, Arkansas River</strong></p>
+				<p class="slideshow-intro">July 24, 2014<br />
+				Timberline Tours<br />
+				Rapids: Class V<br />
+				Water flow: 1,250 cubic feet per second</p>
+				<p>Mary Johnson, a 57-year-old woman from Dallas, had been rafting eight times before but never on a Class V rapid. And she&rsquo;d never fallen out of a raft.</p>
+				<p>More than once, the Timberline Tours guide offered to let Mary and her husband, Ken, &ldquo;portage&rdquo; the most aggressive rapid on the trip &mdash; a Class V beast called Pine Creek &mdash; meaning they could walk the shoreline and get back in the raft after the rapid. But the couple, and everyone else on the two-raft trip that July 2014 day, chose to go through it.</p>
+				<p>Two kayakers, on the trip to help in case anyone fell into the river, navigated Pine Creek Rapid first and were followed by the first raft. They waited 30 yards downstream, ready with a throw rope should the second raft, carrying the Johnsons, have any trouble.</p>
+				<p>The Johnsons&rsquo; raft struck a rock, and their guide, Jason Connolly, 41, bounced out. He swam toward the raft and tried to climb back in. But before he could, the raft hit a hydraulic hole and began &ldquo;surfing&rdquo; &mdash; bouncing and spinning on top of the hole. The tug of the river dragged Connolly under the raft and downstream about 15 yards before he was able to swim to shore.</p>
+				<p>Meanwhile, the Johnsons and another man were thrown into the river as the raft surfed in place. The other passenger was sucked under the raft and spit out, able to swim to shore. The Johnsons floated downstream.</p>
+				<p>When Connolly reached the shore, he ran back upstream to the raft and threw a rope to its remaining passengers, pulling the raft to shore. This took about five minutes, as the Johnsons were swept away in the whitewater.</p>
+				<p>While Connolly was rescuing the raft, Ken Johnson had swum aggressively toward shore about 200 yards downstream and was able to grab a rope thrown by another guide.</p>
+				<p>Photographs taken by a photographer positioned beside the river for action shots of the trip show Mary hitting several rocks as she was tossed downstream. One rock stopped her and submerged her before she washed through the Pine Creek Hole.</p>
+				<p>When Mary resurfaced, conscious but distressed, she briefly grabbed the bow of a rescue kayak. But by then she was weak. She&nbsp;let go and was again washed downstream. The kayaker pursued her but wasn&rsquo;t able to push her to shore until after Triple Drop Rapid, where Mary bounced through more rocks and turbulent water. Her head was no longer above water, and she was unconscious after floating 650 yards down a steeply graded section of the Arkansas containing &ldquo;numerous powerful waves, holes and large boulders.&rdquo;</p>
+				<p>Guides began CPR as Connolly climbed up the river bank to U.S.&nbsp;&nbsp;24, where he flagged down a motorist and used a cellphone to call 911.</p>
+				<p>Connolly then found Ken Johnson and waited with him until Mary&rsquo;s body was evacuated by Chaffee County emergency services, which&nbsp;arrived about 35 minutes after she was pulled from&nbsp;the river. The cause of death was ruled as drowning.</p>
+				<p>Ken would tell a state investigator that his memory of the events was limited, but he remembered being &ldquo;flipped out of the raft&rdquo; and feeling &ldquo;exhausted&rdquo; when he grabbed the rope and reached the shore.</p>
+				<p>&ldquo;When you do this, you don&rsquo;t think this is going to happen,&rdquo; he said.</p>
+				<div class="row clearfix rowbottom">
+					<p><a class="go-to-map left" id="johnson">View on map</a><a class="right" href="javascript:scrollDownTo('#rafting-death-map',60);">Return to map</a></p>
+				</div>
+			</div>
+				
+			<div id="luna-profile">
+				<h4>Erik Luna</h4>
+				<p><strong>Dizzy Lizzy Rapid, Clear Creek</strong></p>
+				<p class="slideshow-intro">July 18, 2015<br />
+				Mile Hi Rafting<br />
+				Rapid: Class III<br />
+				Water flow: 350 cubic feet per second</p>
+				<p>Minutes before Erik Luna unexpectedly fell backward out of a raft into Clear Creek, a photographer on the riverbank took the perfect action shot: the family smiling and laughing in a spray of whitewater.</p>
+				<p>Luna had just given his rafting guide a thumbs up, and then he was in the river. As the 36-year-old from Carlsbad, N.M., floated downstream, his wife shouted, &ldquo;He has asthma!&rdquo;</p>
+				<p>Rafting guide Shawn Stephens, 25, reached out a paddle, and Luna grabbed hold. But he wasn&rsquo;t able to keep his grip. Luna, who was on the rafting trip with five relatives, floated downstream through Dizzy Lizzy, a Class III rapid.</p>
+				<p>The raft knocked into a rock, and then 13-year-old Deric Luna was nearly tossed into the river, injuring his knee. The guide was able to quickly pull him back into the boat before he fell out completely.</p>
+				<p>As the raft chased Erik Luna down the river, his relatives were panicking and had stopped listening to paddling commands, according to the Parks and Wildlife&nbsp;report. Stephens navigated his raft to shore then threw a rescue rope at Luna.</p>
+				<p>But by this point, Luna was &ldquo;unconscious and face down in the water,&rdquo; according to the report.</p>
+				<p>Stephens left his passengers on shore and hopped in the other raft on the trip as it chased Luna through Powerline Rapid. The guide reached Luna and brought him to shore, where he began CPR. The trip photographer, meanwhile, called 911 when she realized a passenger was face down and an unconscious in the water.</p>
+				<p>Guides were unable to help Luna resume breathing. His death and the injury to Deric Luna&rsquo;s knee were &ldquo;consistent with inherent injuries and scenarios that can take place in Class III whitewater,&rdquo; according to the state parks report.</p>
+				<div class="row clearfix rowbottom">
+					<p><a class="go-to-map left" id="luna">View on map</a><a class="right" href="javascript:scrollDownTo('#rafting-death-map',60);">Return to map</a></p>
+				</div>
+			</div>
+				
+			<div id="soto-profile">
+				<h4>Jose Soto</h4>
+				<p><strong>Smelter Rapid, Lower Animas River</strong></p>
+				<p class="slideshow-intro">June 16, 2015<br />
+				Mild to Wild<br />
+				Rapid: Class IV<br />
+				Water flow: high, 4,100 cubic feet per second</p>
+				<p>It&rsquo;s an action-packed stretch of the Animas River, where whitewater turbulence comes in five back-to-back rapids: Smelter Wave, Corkscrew, Corner Pocket, Ponderosa and Clocktower.</p>
+				<p>What was supposed to be a fun family adventure turned deadly at Corner Pocket in&nbsp;June 2015.</p>
+				<p>Jose Soto, 57, of Farmington, N.M., and three of his family members went overboard as their 24-year-old Mild to Wild raft guide entered the Class IV rapid off line and sideways. One passenger swam to shore and two were pulled back into rafts, but Soto continued through the rapids with a &ldquo;fixed stare and teeth clenched,&rdquo; according to a Parks and Wildlife&nbsp;report. By the time he was pulled into a boat, Soto was unconscious and not responsive. He had no pulse when guides started CPR.</p>
+				<p>Soto was described by one of the guides as &ldquo;very jolly&rdquo; and the &ldquo;biggest person I could pull into a raft, but not bigger than the equipment.&rdquo; Some of his family had floated the same stretch of the Animas, but the river wasn&rsquo;t as high as it was last June.</p>
+				<p>Soto&rsquo;s 27-year-old daughter, who had been tossed out of the raft and rescued, ran to him as soon as she reached shore.</p>
+				<div class="row clearfix rowbottom">
+					<p><a class="go-to-map left" id="soto">View on map</a><a class="right" href="javascript:scrollDownTo('#rafting-death-map',60);">Return to map</a></p>
+				</div>
+			</div>
+				
+			<div id="math-profile">
+				<h4>Michelle Math</h4>
+				<p><strong>Double Knife Rapid, Clear Creek</strong></p>
+				<p class="slideshow-intro">May 22, 2015<br />
+				All American Adventures<br />
+				Rapids: Class IV<br />
+				Water flow: 350-620 cubic feet per second</p>
+				<p>Michelle Math, a 48-year-old mother from Wylie, Texas, &nbsp;was &ldquo;mildly nervous&rdquo; as she put on a wetsuit, high-top booties and a helmet for her first whitewater rafting trip last May, according to a Parks and Wildlife investigation.</p>
+				<p>Math and her 13-year-old daughter were with a group of mothers and daughters who traveled to Colorado for the girls&rsquo; soccer tournament. Moms were in one raft, and most of the girls were in another.</p>
+				<p>Math and another woman who was also nervous sat just in front of their rafting guide in the &ldquo;sweep&rdquo; boat, the last raft in line on an early-season, chilly trip down Clear Creek.</p>
+				<p>After the accident, multiple passengers told a state investigator the raft carrying Math was &ldquo;very off balance,&rdquo; making it hard to navigate, and that they had complained about this to the guide. The three largest women were on one side of the boat, while the three smallest were on the other. One woman &ldquo;said that rafting companies need to tell people the dangers associated with rafting and that she was shocked it could end in death.&rdquo;</p>
+				<p>As guide Kyle Kenefick, 29, entered Double Knife Rapid, his raft veered too far to the right, and he &ldquo;couldn&rsquo;t get it back over,&rdquo; according to the state report. The raft bumped a rock and tipped left, tossing Math, the guide and four other passengers into the river.</p>
+				<p>When a state investigator asked Kenefick what factors caused the raft to go too far right, he &ldquo;said he didn&rsquo;t have a good reason why and that he preferred not to answer that question,&rdquo; according to the report.</p>
+				<p>Kenefick was able to grab the raft and hop back in soon after he was thrown overboard, then he pulled three passengers back into the boat. Math and another passenger floated downstream. His crew, now &ldquo;scared and panicking,&rdquo; were no longer working as a team as Kenefick chased his lost passengers down the creek. In a rapid called Hell&rsquo;s Corner, the raft got hung up on a rock and half the crew lost their paddles, delaying their rescue attempt.</p>
+				<p>As Math floated, her life jacket was riding high, a common issue &ldquo;particularly on overweight people,&rdquo; the state report noted. She was screaming.</p>
+				<p>A second raft on the trip, carrying Math&rsquo;s daughter, also was chasing her down the creek. Math&rsquo;s daughter, two other teenagers and the petite raft guide in that boat grabbed Math&rsquo;s life jacket but were not able to pull her into the raft. Instead, they tried to keep her head above water as they tore through Hell&rsquo;s Corner.</p>
+				<p>Eventually, Math was pulled to shore by two kayakers from another float trip at the Terminator 2 rapid. She had no pulse, and CPR compressions did not revive her. She was pronounced dead by emergency responders along the bank of the river. Cause of death was drowning.</p>
+				<p>The state report noted the rafting company did not record customers&rsquo; medical conditions and had a policy that &ldquo;if a customer can&rsquo;t fit in a life jacket, they&rsquo;re not allowed on the trip.&rdquo; All American Adventures did not have a formal emergency action plan, besides using a cellphone to call 911.</p>
+				<p>The investigation found no violation of state law despite &ldquo;allegations of the raft being improperly loaded,&rdquo; the report said.</p>
+				<div class="row clearfix rowbottom">
+					<p><a class="go-to-map left" id="math">View on map</a><a class="right" href="javascript:scrollDownTo('#rafting-death-map',60);">Return to map</a></p>
+				</div>
+			</div>
+				
+			<div id="sizemore-profile">
+				<h4>Paul Sizemore</h4>
+				<p><strong>Hell&rsquo;s Half Mile, Slaughterhouse section of the Roaring Fork River</strong></p>
+				<p class="slideshow-intro">June 16, 2014<br />
+				Blazing Adventures<br />
+				Rapids: Class IV<br />
+				Water flow: 1,300 cubic feet per second</p>
+				<p>Paul Sizemore and his&nbsp;significant other, Jennifer Lenze, were on a belated &ldquo;babymoon&rdquo; in Aspen after the birth of their second child when they saw a rafting video while checking in at the&nbsp;Ritz hotel.</p>
+				<p>They thought they were both up for a Class IV trip down the Roaring Fork, though Lenze&nbsp;was nervous as they signed waivers on the bus ride to the river. Sizemore, 44, was &ldquo;the most fit man I&rsquo;ve ever known,&rdquo; Lenze said in an interview this week, on the two-year anniversary of his death. He ran marathons and long-distance&nbsp;relays.</p>
+				<p>The two rafts and a safety kayaker ran the first major rapid with no trouble then pulled on shore to rest, drink water and talk about the upcoming rapid, Hell&rsquo;s Half Mile.</p>
+				<p>When they started their next difficult run, the raft carrying Sizemore and Lenz stalled after going over the second ledge in a steep section of frothy whitewater. The boat momentarily &ldquo;surfed,&rdquo; held in place by the hydraulic hole. The raft turned left, and Sizemore and another man tumbled into the river.</p>
+				<p>Guide Michael Lewis, 42, extended his paddle to Sizemore so he could grab on, but both passengers were swept downstream.</p>
+				<p>Instead of swimming toward shore, Sizemore was looking to a guide in the safety kayak for help, the investigative report says. They weren&rsquo;t able to reach each other because of the turbulent and steep shoot of the river. The guide in the other raft tossed Sizemore a rope, but he didn&rsquo;t catch it.</p>
+				<p>Soon after, the three women in Lewis&rsquo; raft &mdash; including Lenze &mdash; were able to pull Sizemore back into the boat. He was &ldquo;talking and awake&rdquo; at first, but then his &ldquo;eyes rolled back,&rdquo; according to a Parks and Wildlife&nbsp;report.</p>
+				<p>Guides began CPR in the raft and moved Sizemore to shore. Lenze was &ldquo;hysterical,&rdquo; according to the report. Someone walked her upstream, away from Sizemore, to try to calm her down. Lenze says she was screaming for help, wondering why no helicopter or ambulance had arrived. Aspen firefighters, securing Sizemore in a litter attached to a rope, pulled him out of the river canyon to a bike path above, as CPR continued.</p>
+				<p>Sizemore died after being in the river for an estimated two and a half minutes, a &ldquo;short but violent swim,&rdquo; according to the state report.</p>
+				<p>When the water flow in this section of the river is 1,800 cubic feet per second &mdash; 500 cfs higher than it was the June 2014 day Sizemore died &mdash; Blazing Adventures takes only those 18 and older. It does not require customers to have whitewater experience.</p>
+				<div class="row clearfix rowbottom">
+					<p><a class="go-to-map left" id="sizemore">View on map</a><a class="right" href="javascript:scrollDownTo('#rafting-death-map',60);">Return to map</a></p>
+				</div>
+			</div>
+				
 		</div>
 	</div>
 
@@ -514,8 +787,8 @@
 	<div class="row">
 		<div class="large-12 large-centered medium-12 medium-centered small-12 columns">
 			<div class="centerphoto">
-				<img src="./img/rafting-2MR0842.jpg" alt="Jake Plummer stretches" />
-				<p class="caption"><span class="photog">AAron Ontiveroz, The Denver Post</span>Plummer hopes research studies on CBD will eventually prompt the NFL to allow players to use it.</p>
+				<img src="./img/rafting-2MR0842.jpg" alt="Rafting group on Arkansas River" />
+				<p class="caption"><span class="photog">Michael Reaves, The Denver Post</span>A rafting group arrives at Stonebridge boat ramp after a day out on the Arkansas River on June 10, 2016.</p>
 			</div>
 		</div>
 	</div>
@@ -596,22 +869,21 @@
 					<h3 class="subheading">The Crew</h3>
             		<div class="large-4 columns">
                     	<p class="category">The Story</p>
-                    	<p><a href="mailto:njhabvala@denverpost.com?subject=Game of Pain series">Nicki Jhabvala</a> <em>Writer</em></p>
-						<p><a href="mailto:smonserud@denverpost.com?subject=Game of Pain series">Scott Monserud</a> <em>Editor</em></p>
-						<p><a href="mailto:tberge@denverpost.com?subject=Game of Pain series">Torin Berge</a> <em>Copy Editor</em></p>
-						<p><a href="mailto:mjudson@denverpost.com?subject=Game of Pain series">Mike Judson</a> <em>Copy Editor</em></p>
+                    	<p><strong><a href="mailto:jbrown@denverpost.com?subject=Rafting deaths">Jennifer Brown</a></strong>, <em>Writer</em></p>
+						<p><strong><a href="mailto:ggriffin@denverpost.com?subject=Rafting deaths">Greg Griffin</a></strong>, <em>Editor</em></p>
             		</div>
                   
                   <div class="large-4 columns"> 
                    		<p class="category">Photography &amp; Video</p>
-                    	<p><a href="mailto:aontiveroz@denverpost.com?subject=Game of Pain series">AAron Ontiveroz</a> <em>Photojournalist</em></p>
-						<p><a href="mailto:ptraylor@denverpost.com?subject=Game of Pain series">Patrick Traylor</a> <em>Photo Editor</em></p>
+                    	<p><a href="mailto:mreaves@denverpost.com?subject=Rafting deaths">Michael Reaves</a> <em>Photojournalist</em></p>
+                    	<p><a href="mailto:kosler@denverpost.com?subject=Rafting deaths">Kathryn Scott Osler</a> <em>Photojournalist</em></p>
+						<p><a href="mailto:ptraylor@denverpost.com?subject=Rafting deaths">Patrick Traylor</a> <em>Photo Editor</em></p>
                     </div>
             		
                     <div class="large-4 columns">
                     	<p class="category">Design &amp; Development</p>
-                    	<p><a href="dschneider@denverpost.com?subject=Game of Pain series">Daniel J. Schneider</a> <em>Lead Developer, Web Designer</em></p>
-                    	<p><a href="jneumann@denverpost.com?subject=Game of Pain series">Jeff Neumann</a> <em>Designer, Developer</em></p>
+                    	<p><a href="dschneider@denverpost.com?subject=Rafting deaths">Daniel J. Schneider</a> <em>Lead Developer, Web Designer</em></p>
+                    	<p><a href="jneumann@denverpost.com?subject=Rafting deaths">Jeff Neumann</a> <em>Designer, Developer</em></p>
 				</div>        
 			</div>
 		<a class="close-reveal-modal"></a>
@@ -628,7 +900,7 @@
 	<script>
 		$(document).foundation();
 	</script>
-	<script type="text/javascript">
+	<script>
 	var _sf_async_config={};
 	/** CONFIGURATION START **/
 	_sf_async_config.title = "Death on the River: Family sees weaknesses in regulation of commercial rafting after son's death - The Denver Post";
@@ -640,8 +912,6 @@
 	  function loadChartbeat() {
 	    window._sf_endpt=(new Date()).getTime();
 	    var e = document.createElement("script");
-	    e.setAttribute("language", "javascript");
-	    e.setAttribute("type", "text/javascript");
 	    e.setAttribute('src', '//static.chartbeat.com/js/chartbeat.js');
 	    document.body.appendChild(e);
 	  }

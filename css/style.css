@@ -62,7 +62,9 @@ body {
     width:300px;
     margin:0 auto;
 }
-
+.row.rowbottom, .row .row .rowbottom {
+    margin-bottom:2.5em;
+}
 #cards li div.clear {
     padding-bottom:135%;
 }
@@ -311,24 +313,20 @@ div.title h1 {
 	font-weight:700;
     text-align: center;
 	font-size:3.75em;
-    line-height:1;
+    line-height:1.05;
 	margin:.35em auto 0;
     border-top:1px solid #aaa;
     padding-top:.35em;
 }
 div.title h2 {
-    margin:25% 0 4%;
+    font-family:'Playfair Display', Georgia, Times, 'Times New Roman', serif !important;
+    font-weight:700;
     text-align: center;
-    font-family:'Muli', Helvetica, Arial, sans-serif !important;
-    font-weight:400;
-    font-size:5.8em;
-    letter-spacing:0px;
-    line-height:1;
-    padding-bottom:1em;
-    border-bottom:1px solid #aaa;
-    color:rgba(34,34,34,1);
-    display:block;
-    z-index:-1;
+    font-size:2.75em;
+    line-height:1.1;
+    margin:.35em auto 1.5em;
+    border-top:1px solid #aaa;
+    padding-top:.35em;
 }
 /*h1, h2, h3, h4 {
   	font-family:'PT Sans Narrow', Helvetica, Arial, sans-serif !important;
@@ -347,7 +345,13 @@ h3.subheading {
     border-bottom:1px solid rgba(0,0,0,.3);
 	color:#8b6c5b;
 }
-
+h4 {
+    font-family:'Lora', Georgia, Times, 'Times New Roman', serif !important;
+    font-size:1.6em;
+    font-weight:400;
+    display:block;
+    margin:1em auto;
+}
 h3.subheading.sansline {
     border-bottom:none;
     margin-bottom:0;
@@ -375,13 +379,12 @@ h3.subheading.internal {
 	letter-spacing:.1em;
 }
 /* ------------------------- map styles ---------------------- */
+#rafting-death-map img {
+    max-width: none;
+}
 #rafting-death-map {
     height: 600px;
     width: 100%;
-}
-    a.go-to-map:hover {
-    text-decoration: underline;
-    color: red;
 }
 .leaflet-popup-content-wrapper,
 .leaflet-popup-tip {
@@ -465,7 +468,7 @@ p.instructions {
     text-align: center;
     margin-top:-1em;
 }
-p.slideshow-intro{
+p.slideshow-intro {
     font-family:'Muli', Helvetica, Arial, sans-serif !important;
     font-size:1em;
     margin:0 2.5em 2em;
