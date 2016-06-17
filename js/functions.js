@@ -7,18 +7,13 @@ var body = document.body, html = document.documentElement;
 var docHeight = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
 var current = '';
 var swapped = false;
-var galleriesLoaded = [];
 var adsloaded = [];
 /* THIS IS CONFIG DATA SPECIFIC TO SITE */
 var showAds = true; //show slide-up leaderboards at bottom
 var slideAds = 1; //number of times to slide up a leaderboard
 var titleFade = true; //whether to fade the Denver Post logo in the top-bar to show the "DP" and a text title
 //var pages = ['#titlepage','#part1','#photos','#part2']; //div/section IDs that should trigger a page view and title change
-var pages = [];
-$('.omnitrig').each(function(i,e) { pages.push('#'+$(e).attr('id')) });
-var galleries = [];
-var playedVideos = [];
-$('.centergallery').each(function(i,e) { galleries.push('#'+$(e).attr('id')) }); //div/section IDs of galleries to instantiate (must be a div like #photos and have a child, the gallery itself, with the same ID plus 'gallery' -- i.e. #photosgallery)
+//div/section IDs of galleries to instantiate (must be a div like #photos and have a child, the gallery itself, with the same ID plus 'gallery' -- i.e. #photosgallery)
 
 function revealSocial(type,link,title,image,desc,twvia,twrel) {
     title = typeof title !== 'undefined' ? title : false;
@@ -42,20 +37,6 @@ function revealSocial(type,link,title,image,desc,twvia,twrel) {
     return false;
 }
 
-function load_omniture() {
-        var omni = $('#omniture').html();
-        $('#omniture').after('<div id="new_omni">' + omni + '</div>');
-}
-function build_url(path) {
-        var url = pathRoot + path;
-        return url;
-}
-function rewrite_url(path, new_title) {
-        var url = build_url(path);
-        current = path;
-        document.title = (typeof new_title == 'undefined' || new_title.length < 1 ) ? titleRoot : new_title + ' - ' + titleRoot;
-        window.history.replaceState('', new_title, url);
-}
 
 $(document).foundation('reveal', {
     animation: 'fade',
@@ -64,39 +45,10 @@ $(document).foundation('reveal', {
 function revealCredits() {
     $('#credits').foundation('reveal', 'open');
 }
-function revealSlides(galleries) {
-    for (key in galleries) {
-        if (galleriesLoaded.indexOf(galleries[key]) == -1) {
-            $(galleries[key]).find('img').unveil();
-            $(galleries[key]).slick({
-                centerMode: true,
-                centerPadding: '0',
-                slidesToShow: 1,
-                prevArrow: '<button type="button" class="slick-prev"><span>&lt;</span></button>',
-                nextArrow: '<button type="button" class="slick-next"><span>&gt;</span></button>',
-                responsive: [{
-                    breakpoint: 800,
-                    settings: {
-                        arrows: true,
-                        centerMode: true,
-                        centerPadding: '5%',
-                        slidesToShow: 1
-                    }
-                }]
-            });
-            galleriesLoaded.push(galleries[key]);
-        }
-    }
-}
 function checkHash() {
     if (window.location.hash) {
-        revealSlides(galleries);
         var hash = window.location.hash;
-        if ($(hash).hasClass('hide')) {
-            toggleSidebar(hash,hash + 'link');
-        } else {
-            scrollDownTo(hash);
-        }
+        scrollDownTo(hash);
     }
 }
 
@@ -106,38 +58,9 @@ function scrollDownTo(whereToScroll, scrollOffset) {
         $('html,body').animate({
             scrollTop: ($(whereToScroll).offset().top - scrollOffset)
         }, 300);
-    } else {
-        var new_url = window.location.href.split('#')[0];
-        window.history.replaceState('', document.title, new_url);
     }
 }
 
-function toggleSidebar(toShow,toHide) {
-    $(toShow).removeClass('hide');
-    $(toHide).addClass('hide');
-    rewrite_url(toShow);
-    scrollDownTo(toShow);
-}
-
-function playerCreator(embedId, playerId, divId) {
-    divId = typeof divId !== 'undefined' ? divId : false;
-    if (divId) {
-        $(divId).animate({backgroundColor:'rgba(0,70,70,0.3)',paddingLeft:'.5em',paddingRight:'.5em'}, 350).delay(2000).animate({backgroundColor:'transparent',paddingLeft:'0',paddingRight:'0'},1000);
-    }
-    if (playedVideos.indexOf(playerId) != 0) {
-        playedVideos.push(playerId);
-        $('#' + embedId).html('<video id="'+embedId+'player" preload controls autoplay> \n\
-            <source src="./video/'+playerId+'.mp4" /> \n\
-            <source src="./video/'+playerId+'.webm" /> \n\
-        </video>');
-        $('#' + embedId).css('cursor','default');
-    }
-}
-
-function playerScroller(embedId, playerId, divId) {
-    scrollDownTo(('#' + embedId),100);
-    playerCreator(embedId, playerId, divId);
-}
 function getNodePosition(node) {
     var eTop = $(node).offset().top;
     return Math.abs(eTop - $(window).scrollTop());
@@ -153,29 +76,8 @@ function isVisible(element) {
     }
 }
 
-function isElementInViewport(el) {
-    el = el.toString().replace('#','');
-    if (document.getElementById(el) != null) {
-        var rect = document.getElementById(el).getBoundingClientRect();
-        var half = window.innerHeight / 2;
-        var whole = window.innerHeight;
-        return ( (rect.top > 0 && rect.top < half) || (rect.bottom < whole && rect.bottom > half) || (rect.top < 0 && rect.bottom > whole) );
-    } else {
-        return;
-    }
-}
-
 $('.top-top').click(function(evt) {
     $('.toggle-topbar').click();
-});
-
-$('.vid-embed').on("mouseenter", function() {
-    $(this).find('.playicon').fadeTo(300, 0);
-    $(this).find('.playtext').fadeTo(300, 1);
-});
-$('.vid-embed').on("mouseleave", function() {
-    $(this).find('.playicon').fadeTo(300, 1);
-    $(this).find('.playtext').fadeTo(300, 0);
 });
 
 function fadeNavBar(reverse) {
@@ -272,29 +174,6 @@ function checkAdPos() {
     }
 }
 
-function checkPageState(pages) {
-    for (key in pages) {
-        if ($(window).scrollTop() < 100) {
-            rewrite_url('','');
-            break;
-        }
-        var currentpage = pages[key];
-        var next = (pages[parseInt(key) + 1]) ? pages[parseInt(key) + 1] : currentpage;
-        var prev = (pages[parseInt(key) - 1]) ? pages[parseInt(key) - 1] : currentpage;
-        if (isElementInViewport(currentpage) && currentpage != current) {
-            var triggerDiv = $(currentpage);
-            rewrite_url(currentpage.toString(),$(triggerDiv).data('omniTitle'));
-            if ($(triggerDiv).hasClass('omnitrig')) {
-                load_omniture();
-                $(triggerDiv).removeClass('omnitrig');
-            }
-        }
-    }
-	if (isElementInViewport('#next-page')) {
-            hideAdManual();   
-        }
-}
-
 $(document).ready(function() {
     checkHash();
     checkAdPos();
@@ -307,8 +186,6 @@ $(window).scroll(function() {
 setInterval(function() {
     if (didScroll) {
         checkFade();
-        checkPageState(pages);
-        revealSlides(galleries);
         checkAdPos();
     }
 },250);
